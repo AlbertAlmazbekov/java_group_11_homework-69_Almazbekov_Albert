@@ -1,4 +1,4 @@
-package com.example.homework66.config;
+package com.example.homework68.config;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -25,8 +25,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 //        super.configure(http);
-        http.formLogin().loginPage("/login");
-        http.formLogin().failureUrl("/login?error=true");
+        http.formLogin()
+                .loginPage("/login")
+                .failureUrl("/login?error=true")
+                .defaultSuccessUrl("/tovar");
+
 
         http.logout()
                 .logoutUrl("/logout")

@@ -1,0 +1,12 @@
+body {
+    font-family: Raleway, sans-serif;
+}
+
+.header{
+    background-color: #0044fd;
+}
+.nav-link{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+}
